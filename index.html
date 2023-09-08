@@ -1,0 +1,33 @@
+<html>
+<head>    
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+    <body>
+     <div class="container">
+      <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+      <div class="popup" id="popup">
+      <span class="icon"><i class="fa-regular fa-circle-check"></i></span>
+      <h2>Thank You</h2>
+      <p>Your details has been successfully submitted. Thanks!</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    </div>
+        
+    <script>
+    
+    let popup = document.getElementById("popup");
+        
+    function openPopup(){
+       popup.classList.add("open-popup"); 
+    }
+        
+     function closePopup(){
+       popup.classList.remove("open-popup"); 
+    }    
+    </script>
+    </body>
